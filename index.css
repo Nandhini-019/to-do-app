@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  padding: 2em;
+  max-width: 600px;
+  margin: auto;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.task-list {
+  margin-top: 1em;
+  padding: 1em;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em;
+  border-bottom: 1px solid #ddd;
+}
+
+.task:last-child {
+  border-bottom: none;
+}
+
+.task input[type="checkbox"] {
+  margin-right: 0.5em;
+}
+
+.task.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task span {
+  flex: 1;
+}
+
+.task-actions button {
+  margin-left: 0.5em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-bottom: 1em;
+}
+
+input, select, button {
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+.list-select {
+  margin-top: 1em;
+}
