@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple To-Do App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>To-Do App</h1>
+
+  <form id="task-form">
+    <input type="text" id="task-title" placeholder="Task Title" required />
+    <input type="datetime-local" id="task-datetime" />
+    <select id="task-list">
+      <option value="default">Default</option>
+    </select>
+    <button type="submit">Add Task</button>
+  </form>
+
+  <form id="new-list-form">
+    <input type="text" id="new-list-name" placeholder="New List Name" />
+    <button type="submit">Add List</button>
+  </form>
+
+  <div id="lists-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
